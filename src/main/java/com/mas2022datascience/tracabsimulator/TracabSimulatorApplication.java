@@ -24,18 +24,18 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 @SpringBootApplication
-public class SpringSimulatorApplication implements CommandLineRunner {
+public class TracabSimulatorApplication implements CommandLineRunner {
 
-	final private static Logger LOG = LoggerFactory.getLogger(SpringSimulatorApplication.class);
+	final private static Logger LOG = LoggerFactory.getLogger(TracabSimulatorApplication.class);
 
 	private final KafkaTracabProducer kafkaTracabProducer;
 
-	public SpringSimulatorApplication(KafkaTracabProducer kafkaTracabProducer) {
+	public TracabSimulatorApplication(KafkaTracabProducer kafkaTracabProducer) {
 		this.kafkaTracabProducer = kafkaTracabProducer;
 	}
 
 	public static void main(String[] args) {
-		ConfigurableApplicationContext ctx = SpringApplication.run(SpringSimulatorApplication.class, args);
+		ConfigurableApplicationContext ctx = SpringApplication.run(TracabSimulatorApplication.class, args);
 		SpringApplication.exit(ctx, () -> 0);
 	}
 

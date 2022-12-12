@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.mas2022datascience</groupId>
-	<artifactId>spring-simulator</artifactId>
+	<artifactId>tracab-simulator</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-simulator</name>
+	<name>tracab-simulator</name>
 	<description>Simulator to write tracab data to a topic with avro schema</description>
 	<properties>
 		<java.version>17</java.version>

@@ -1,4 +1,4 @@
-package com.mas2022datascience.springsimulator.admin;
+package com.mas2022datascience.tracabsimulator.admin;
 
 import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.common.config.TopicConfig;

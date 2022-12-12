@@ -1,4 +1,4 @@
-package com.mas2022datascience.springsimulator.producer;
+package com.mas2022datascience.tracabsimulator.producer;
 
 import com.mas2022datascience.avro.v1.Frame;
 import java.util.concurrent.ExecutionException;
@@ -25,15 +25,11 @@ public class KafkaTracabProducer {
     SendResult<String, Frame> result = null;
     try {
       result = kafkaTemplate.send(tracabTopic, key, value).get(10, TimeUnit.SECONDS);
-    } catch (InterruptedException e) {
-      e.printStackTrace();
-    } catch (ExecutionException e) {
-      e.printStackTrace();
-    } catch (TimeoutException e) {
+    } catch (InterruptedException | ExecutionException | TimeoutException e) {
       e.printStackTrace();
     }
 
-    long elapsedTime = System.currentTimeMillis() - time;
+//    long elapsedTime = System.currentTimeMillis() - time;
     System.out.printf("sent record(key=%s, offset=%d)\n",key,result.getRecordMetadata().offset());
 //    System.out.printf("sent record(key=%s value=%s) "
 //            + "meta(partition=%d, offset=%d) time=%d\n",

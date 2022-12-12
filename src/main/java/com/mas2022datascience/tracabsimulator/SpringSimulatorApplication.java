@@ -1,4 +1,4 @@
-package com.mas2022datascience.springsimulator;
+package com.mas2022datascience.tracabsimulator;
 
 import com.mas2022datascience.avro.v1.Competition;
 import com.mas2022datascience.avro.v1.Frame;
@@ -6,7 +6,7 @@ import com.mas2022datascience.avro.v1.Match;
 import com.mas2022datascience.avro.v1.Object;
 import com.mas2022datascience.avro.v1.Phase;
 import com.mas2022datascience.avro.v1.Stadium;
-import com.mas2022datascience.springsimulator.producer.KafkaTracabProducer;
+import com.mas2022datascience.tracabsimulator.producer.KafkaTracabProducer;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
